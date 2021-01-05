@@ -1,0 +1,19 @@
+[go-svc-bootstrap]2021/01/06 - 00:04:21.380	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:17	use middleware logger
+[go-svc-bootstrap]2021/01/06 - 00:04:21.380	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:20	use middleware cors
+[go-svc-bootstrap]2021/01/06 - 00:04:21.380	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:27	router register success
+[go-svc-bootstrap]2021/01/06 - 00:04:21.380	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:50	server run success on 	{"address": ":8888"}
+[go-svc-bootstrap]2021/01/06 - 00:05:26.187	[31merror[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:56	accept tcp [::]:8888: use of closed network connection
+[go-svc-bootstrap]2021/01/06 - 00:07:56.697	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:17	use middleware logger
+[go-svc-bootstrap]2021/01/06 - 00:07:56.697	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:20	use middleware cors
+[go-svc-bootstrap]2021/01/06 - 00:07:56.697	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:27	router register success
+[go-svc-bootstrap]2021/01/06 - 00:07:56.697	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:50	server run success on 	{"address": ":8888"}
+[go-svc-bootstrap]2021/01/06 - 00:07:56.697	[31merror[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:56	net.Listen error: listen tcp :8888: bind: address already in use
+[go-svc-bootstrap]2021/01/06 - 00:08:17.363	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:17	use middleware logger
+[go-svc-bootstrap]2021/01/06 - 00:08:17.364	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:20	use middleware cors
+[go-svc-bootstrap]2021/01/06 - 00:08:17.364	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:27	router register success
+[go-svc-bootstrap]2021/01/06 - 00:08:17.364	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:50	server run success on 	{"address": ":8888"}
+[go-svc-bootstrap]2021/01/06 - 00:14:03.691	[31merror[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:56	accept tcp [::]:8888: use of closed network connection
+[go-svc-bootstrap]2021/01/06 - 00:14:05.661	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:17	use middleware logger
+[go-svc-bootstrap]2021/01/06 - 00:14:05.661	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:20	use middleware cors
+[go-svc-bootstrap]2021/01/06 - 00:14:05.662	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/initialize/router.go:27	router register success
+[go-svc-bootstrap]2021/01/06 - 00:14:05.662	[34minfo[0m	/home/johnny/Development/source_code/git/own/go-svc-bootstrap/core/server.go:50	server run success on 	{"address": ":8888"}
