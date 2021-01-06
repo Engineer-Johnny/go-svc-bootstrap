@@ -6,9 +6,9 @@ RPMBUILDPATH="${HOME}/rpmbuild"
 
 rpmbuild:
 # mkdir -pv ./build/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
-# echo "%_topdir	./build/rpm_build" > ~/.rpmmacros && rpmdev-setuptree && echo "rpm building preparatory work --- Done."
-# echo "%_topdir	%{getenv:HOME}/rpmbuild" > ~/.rpmmacros && rpmdev-setuptree && echo "rpm building preparatory work --- Done."
-	echo "%_topdir	%{getenv:HOME}/rpmbuild" > ~/.rpmmacros && echo "%debug_package %{nil}" >> ~/.rpmmacros && rpmdev-setuptree && echo "rpm building preparatory work --- Done."
+# echo "%_topdir  ./build/rpm_build" > ~/.rpmmacros && rpmdev-setuptree && echo "rpm building preparatory work --- Done."
+# echo "%_topdir  %{getenv:HOME}/rpmbuild" > ~/.rpmmacros && rpmdev-setuptree && echo "rpm building preparatory work --- Done."
+	echo "%_topdir  %{getenv:HOME}/rpmbuild" > ~/.rpmmacros && echo "%debug_package  %{nil}" >> ~/.rpmmacros && rpmdev-setuptree && echo "rpm building preparatory work --- Done."
 	rpmdev-setuptree && echo "rpm building preparatory work --- Done."
 	cp ./resource/build/rpmbuild/hello-world-1.0.0.tar.gz ${RPMBUILDPATH}/SOURCES
 	cp ./resource/build/rpmbuild/hello-world.spec ${RPMBUILDPATH}/SPECS
@@ -20,6 +20,7 @@ rpmbuild:
 	cp -r ${RPMBUILDPATH}/SRPMS/* ./build/rpmbuild/SRPMS
 
 	# Clean rpmbuild folder
+	rm -rf ~/.rpmmacros
 	rm -rf ${RPMBUILDPATH}
 # rpmbuild --define '_topdir ~/rpmbuild' -ba $HOME/rpmbuild/SPECS/hello-world.spec
 
