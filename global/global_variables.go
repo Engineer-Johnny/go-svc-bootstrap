@@ -15,7 +15,3 @@ var (
 	G_LOG    *zap.Logger
 	G_DB     *gorm.DB
 )
-
-const (
-	ConfigFile = "config.yaml"
-)

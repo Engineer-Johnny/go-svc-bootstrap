@@ -30,6 +30,7 @@ func RunServer() {
 
 		fmt.Printf(`
 	Welcome to use go-svc-bootstrap
+	default Swagger API doc link at: https://127.0.0.1%s/swagger/index.html
 	default current service running at: http://127.0.0.1%s
 `, address)
 		// m := autocert.Manager{
@@ -51,6 +52,7 @@ func RunServer() {
 
 		fmt.Printf(`
 		Welcome to use go-svc-bootstrap
+		default Swagger API doc link at: http://127.0.0.1%s/swagger/index.html
 		default current service running at: http://127.0.0.1%s
 `, address)
 		global.G_LOG.Error(s.ListenAndServe().Error())

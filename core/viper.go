@@ -1,10 +1,10 @@
 package core
 
 import (
+	"flag"
 	"fmt"
 	"go-svc-bootstrap/global"
-
-	// _ "go-svc-bootstrap/packfile"
+	"os"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
@@ -12,8 +12,24 @@ import (
 
 func Viper(path ...string) *viper.Viper {
 	var config string
-	config = global.ConfigFile
-	fmt.Printf("you are using the config file path is %v\n", global.ConfigFile)
+	if len(path) == 0 {
+		flag.StringVar(&config, "c", "", "choose config file.")
+		flag.Parse()
+		if config == "" { // priority: CLI > env > default value
+			if configEnv := os.Getenv(global.ConfigEnv); configEnv == "" {
+				config = global.ConfigFile
+				fmt.Printf("You are using the default config path value, and the config path is %v\n", global.ConfigFile)
+			} else {
+				config = configEnv
+				fmt.Printf("You are using the GVA_CONFIG env, and the config path is %v\n", config)
+			}
+		} else {
+			fmt.Printf("You are using the CLI -c param value, and the config path is %v\n", config)
+		}
+	} else {
+		config = path[0]
+		fmt.Printf("You are using the func Viper() param value, and the config path is %v\n", config)
+	}
 
 	v := viper.New()
 	v.SetConfigFile(config)
