@@ -27,7 +27,13 @@ rpmbuild:
 build:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ${BINARY}
 
+swaggerdoc:
+	go get -u github.com/swaggo/swag/cmd/swag
+	swag init
+
 run:
+	# generate last version Swagger API doc
+	swag init
 	@go run main.go
 
 check:
